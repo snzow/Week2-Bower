@@ -1,6 +1,7 @@
 package Stacks;
 
 import java.util.EmptyStackException;
+import java.util.Stack;
 
 public interface StackInterface<T> {
     /** Adds a new entry to the top of this stack.
@@ -26,6 +27,22 @@ public interface StackInterface<T> {
 
     public void display();
 
-    public int removeMin(ArrayStack<Integer> as) ;
+
+    /** takes a stack and removes every instance of the minimum value, and then returns the minimum value
+     * runs in O(N)
+     *
+     * @param s the stack to remove the minimum from
+     * @return the value of the minimum
+     */
+    public int removeMin(Stack s);
+
+    /** takes a stack and returns true if it is sorted in ascending order bottom to top
+     * false if it is not
+     * runs in O(N)
+     *
+     * @param s the stack to check
+     * @return returns true if sorted, false if not - empty stacks are considered sorted
+     */
+    public boolean isSorted(Stack s);
 
 }
