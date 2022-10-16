@@ -1,2 +1,4 @@
-package Stacks;public class ArrayMain {
+package Stacks;
+
+public class ArrayMain {
 }
